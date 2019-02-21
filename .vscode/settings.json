@@ -1,0 +1,18 @@
+{
+  // Vetur settings
+  "vetur.format.defaultFormatter.js": "prettier",
+  "vetur.format.defaultFormatter.stylus": "stylus-supremacy",
+  // Prettier settings
+  "prettier.eslintIntegration": true,
+  // Stylus Supremacy settings
+  "stylusSupremacy.insertColons": true,
+  "stylusSupremacy.insertSemicolons": false,
+  "stylusSupremacy.insertBraces": false,
+  // ESLint settings
+  "eslint.validate": [
+    { "language": "vue", "autoFix": true },
+    { "language": "javascript", "autoFix": true }
+  ],
+  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true
+}

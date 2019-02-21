@@ -1,0 +1,28 @@
+{
+  "root": true,
+  "env": {
+    "node": true
+  },
+  "extends": [
+    "plugin:vue/essential",
+    "@vue/prettier"
+  ],
+  "rules": {
+    "no-undef": "off",
+    "no-debugger": "off",
+    "semi": "off",
+    "no-unused-vars": "off",
+    "no-dynamic-import": "on",
+    "no-console": "off",
+    "comma-dangle": ["error", "never"],
+    "prettier/prettier": ["error", {
+      "singleQuote": true,
+      "semi": false
+    }]
+  },
+  "parserOptions": {
+    "parser": "babel-eslint",
+    "ecmaVersion": 8,
+    "sourceType": "module"
+  }
+}

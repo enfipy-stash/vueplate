@@ -1,0 +1,29 @@
+version: "3"
+
+networks:
+  dev:
+
+services:
+
+  dev:
+    container_name: dev
+    build:
+      context: .
+      dockerfile: ./docker/dev.Dockerfile
+    volumes:
+      - ./src:/app/src
+    ports:
+      - 8080:8080
+    networks:
+      - dev
+
+  # cypress:
+  #   container_name: cypress
+  #   build:
+  #     context: .
+  #     dockerfile: ./docker/cypress.Dockerfile
+  #   environment:
+  #     - CYPRESS_baseUrl=http://dev
+  #   command: npx cypress open
+  #   depends_on:
+  #     - dev
